@@ -116,15 +116,22 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="assets/images/bannerkingtech.png" alt="Los Angeles">
+        <a href="{{url('/contacto')}}">
+      <img src="assets/images/bannerkingtech.png" alt="franquicias">      
+        </a>
+      
     </div>
 
     <div class="item">
-      <img src="assets/images/web4.png" alt="Chicago">
+        <a href="{{url('/contacto')}}">
+      <img src="assets/images/web4.png" alt="franquicias">
+  </a>
     </div>
 
     <div class="item">
-      <img src="assets/images/web5.png" alt="New York">
+        <a href="{{url('/contacto')}}">
+      <img src="assets/images/web5.png" alt="franquicias">
+  </a>
     </div>
   </div>
 
@@ -142,13 +149,19 @@
 <div id="carouselExample" class="carousel slide display-image-mobile">
   <div class="carousel-inner">
     <div class="carousel-item active">
+        <a href="{{url('/contacto')}}">
       <img src="assets/images/mobile1.png" class="d-block w-100" alt="...">
+  </a>
     </div>
     <div class="carousel-item">
+        <a href="{{url('/contacto')}}">
       <img src="assets/images/mobile2.png" class="d-block w-100" alt="...">
+  </a>
     </div>
     <div class="carousel-item">
+        <a href="{{url('/contacto')}}">
       <img src="assets/images/mobile3.png" class="d-block w-100" alt="...">
+  </a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
