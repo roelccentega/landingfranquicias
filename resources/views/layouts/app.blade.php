@@ -137,6 +137,15 @@
         font-family: 'Inter', sans-serif;
 
     }
+    @media(max-width: 768px)
+    {
+        .text-work{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Inter';
+
+    }
+    }
     .team-one__single2
     {
         border: 2px solid #36BA01;

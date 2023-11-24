@@ -3013,6 +3013,16 @@ ul {
   padding-top: 50px;
 }
 
+@media(max-width: 768px)
+{
+  .about-one__right {
+  position: relative;
+  display: block;
+  margin-left: 70px;
+  padding-top: 10px;
+}
+
+}
 .about-one__right .section-title {
   margin-bottom: 31px;
 }
@@ -3222,6 +3232,18 @@ ul {
   z-index: 1;
 }
 
+@media(max-width: 768px)
+
+{
+  .services-one {
+  position: relative;
+  display: block;
+  background-color: var(--gardon-black);
+  padding: 120px 0 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+}
 .services-one__bg {
   position: absolute;
   top: 0;

@@ -239,7 +239,12 @@
             </div>
         </section>
     <!--LOGO End-->
-        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/banner-world.png')}});">
+    <style type="text/css">
+        span.font-span-title2{
+            padding-top: 80px;
+        }
+    </style>
+        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}});">
             <!--Services One Start-->
             <div class="services-one__bg" >
             </div>
@@ -353,17 +358,18 @@
 
          }
     .pad-container{
-            padding: 0 20px;   
+              padding: 0 15px 0px 30px;
             }
     .title3-h2 {
     color: #fff;
     font-style: italic;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 100
+
         }
         .font-span-title5 {
     font-weight: 800;
-    font-size: 26px;
+    font-size: 23px;
         }
         .team-bootom {
     border: 2px solid #36BA01;
@@ -386,8 +392,7 @@
         .text-none{
             display: none
         }
-        .pad-container {
-    padding: 0 5px 0 20px;}
+     
     .team-one__single2 {
     border: 2px solid #36BA01;
     margin-bottom: 50px;
@@ -429,9 +434,10 @@
             padding-left: 0px;
         }
         .section-title__title {
-    font-size: 30px;
+        font-size: 29px;
+    text-align: center;
     line-height: 40px;
-    padding: 0 20px;
+    padding: 0 30px;
         }
         .about-one {
     position: relative;
@@ -449,15 +455,18 @@
     @media(max-width: 768px)
     {
       .banner-section{
-        background-image: url({{asset('assets/images/banner-section.png')}});
+        background-image: url({{asset('assets/images/seccion2y3.png')}});  
+        
       }   
     }
+   
+    
 </style>
         <!--About One Start-->
         <section class="about-one pad banner-section" id="requerimientos">
             <div class="">
                 <!-- Presentacion 1500 socios -->
-                <div class="row">
+                <div class="row ">
                     <div class="col-xl-6 display-carousel-web" >
                         <div class="about-one__left">
                             <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
@@ -541,11 +550,11 @@
                 <!-- En presentación 1500 socios -->
 
                 <!-- galeria de franquicias -->
-                <div class="row pad-new-banner" id="#trabajo">
+                <div class="row pad-new-banner " id="#trabajo">
                     <div class="section-title text-center">
                     
                     <h2 class="title3-h2 display-carousel-web">CON KINGTECH PARTNER, <span class="font-span-title2">TU TIENDA <br>SE VERÁ DE ESTA MANERA   </span>  </h2>
-                     <h2 class="title3-h2 display-carousel-mobile">CON KINGTECH PARTNER, <br>   <span class="font-span-title5">TU TIENDA <br>SE VERÁ DE ESTA MANERA   </span>  </h2>
+                     <h2 class="title3-h2 display-carousel-mobile">CON KINGTECH PARTNER, <br>   <span class="font-span-title5"><b>TU TIENDA <br>SE VERÁ DE ESTA MANERA  </b>   </span>  </h2>
                     <br>  
                      <br>    
                     <div class="row pad-container">
@@ -798,12 +807,17 @@
                 </div>
 
             </div>
+            <style type="">
+                .fontt{
+                    font-size: 27px
+                }
+            </style>
              <section class="testimonial-one display-image-mobile">
             <div class="container">
                 <div class="row">
                    <div class="section-title text-center">
                     
-                    <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
+                    <h2 class="section-title__title fontt">TESTIMONIOS DE NUESTROS PARTNER
                         </h2>
                         <br>
                         <P class="text-work">Conoce la experiencias de nuestros clientes</P>
