@@ -35,7 +35,7 @@
                                                 </div>
                                                
                                              <div class="about-one__btn-box">
-                                                <a href="{{url('/contacto')}}" class="about-one__btn thm-btn"><img src="{{asset('assets/images/whatsapp.png')}}" width="27px"> WhatsApp</a>
+                                                <a href="https://wa.me/51913069000" target="_blank" class="about-one__btn thm-btn"><img src="{{asset('assets/images/whatsapp.png')}}" width="27px"> WhatsApp</a>
                                             </div>
                                             </div>
                                         </div>
