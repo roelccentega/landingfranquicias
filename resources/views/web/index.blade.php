@@ -130,7 +130,7 @@
     <div class="item active">
  
             
-                    <img src="assets/images/bannerkingtech.png" alt="Franquicias">   
+                    <img src="assets/images/bannerkingtecha.png" alt="Franquicias">   
                     
 
          <div class="carousel-caption d-none d-md-block">
@@ -143,7 +143,7 @@
  
      <div class="item ">
       
-            <img src="assets/images/web4.png" alt="Franquicias">
+            <img src="assets/images/web4a.png" alt="Franquicias">
       
           <div class="carousel-caption d-none d-md-block">
                 <div class="about-one__btn-box text-center">
@@ -156,7 +156,7 @@
 
     <div class="item ">
     
-      <img src="assets/images/web5.png" alt="Franquicias">
+      <img src="assets/images/web5a.png" alt="Franquicias">
 
     <div class="carousel-caption d-none d-md-block text-top">
                 <div class="about-one__btn-box text-left " >
