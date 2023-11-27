@@ -415,7 +415,7 @@
         .pad-buttom {
     padding-top: 30px;
     padding-right: 0px;
-    padding-left: 30px;
+
         }
         .pad3{
             padding-top: 20px
@@ -773,8 +773,14 @@ video{
     border:3px solid green;
     border-radius: 35px
 }
+@media(max-width: 768px)
+{
+    .pad-video {
+    padding: 150px 0 1px;
+        }
+}
 </style>
-            <div class="container pad-video " id="testimonios">
+            <div class="container pad-video display-image-web" id="testimonios">
                     <div class="section-title text-center">
                     
                     <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
@@ -790,6 +796,41 @@ video{
                         <div class="team--">
 
                             <video height="auto" width="35%" controls autoplay poster="{{asset('images/influencerimages.png')}}">
+                                <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
+                              
+                            </video>
+                                    
+                        </div>
+                    </div>
+                 
+
+                  
+                   </div>   
+                     <br>    
+                        <div class="col-md-12 text-center pad-buttom">
+                            <div class="about-one__btn-box">
+                                <a href="http://127.0.0.1:8000/contacto" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                            </div>  
+                        </div>  
+                
+
+                </div>
+                 <div class="container pad-video display-image-mobile" id="testimonios">
+                    <div class="section-title text-center">
+                    
+                    <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
+                        </h2>
+                        <br>
+                        <p class="text-work">Conoce la experiencias de nuestros clientes</p>
+                    </div>
+                  <div class="row align-self-center">
+                   
+                    
+                   
+                    <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="team--">
+
+                            <video height="auto" width="80%" controls autoplay poster="{{asset('images/influencerimages.png')}}">
                                 <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
                             </video>
