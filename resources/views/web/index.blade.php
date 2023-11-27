@@ -767,116 +767,48 @@
     display: block;
     width: none;
     width: 100%;
-}</style>
-                <!-- Testimonios -->
-                <div class="container pad-video display-image-web" id="testimonios">
+}
+
+video{
+    border:3px solid green;
+    border-radius: 35px
+}
+</style>
+            <div class="container pad-video display-image-web" id="testimonios">
                     <div class="section-title text-center">
                     
                     <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
                         </h2>
                         <br>
-                        <P class="text-work">Conoce la experiencias de nuestros clientes</P>
+                        <p class="text-work">Conoce la experiencias de nuestros clientes</p>
                     </div>
                   <div class="row align-self-center">
                    
                     
-                     <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6 text-right wow fadeInUp" data-wow-delay="300ms">
+                   
+                    <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="team--">
 
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                        
-                        </div>
-                    </div>
-                    <!--Team One Single End-->
-                     <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-">
-                            <div class="team--">
-                                 <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
+                            <video height="auto" width="35%" controls autoplay poster="{{asset('images/influencerimages.png')}}">
+                                <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
-                        </div>
-                    </div>
-                    <!--Team One Single End-->
-                 
-                   </div>   
-                </div>
-
-            </div>
-            <style type="">
-                .fontt{
-                    font-size: 27px
-                }
-            </style>
-             <section class="testimonial-one display-image-mobile">
-            <div class="container">
-                <div class="row">
-                   <div class="section-title text-center">
-                    
-                    <h2 class="section-title__title fontt">TESTIMONIOS DE NUESTROS PARTNER
-                        </h2>
-                        <br>
-                        <P class="text-work">Conoce la experiencias de nuestros clientes</P>
-                    </div>
-                    <div class="col-xl-12">
-                        <div class="testimonial-one__right">
-                            <div class="testimonial-one__carousel thm-owl__carousel owl-theme owl-carousel"
-                                data-owl-options='{
-                                "items": 2,
-                                "margin": 17,
-                                "smartSpeed": 700,
-                                "loop":true,
-                                "autoplay": false,
-                                "nav":false,
-                                "dots":true,
-                                "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                                "responsive":{
-                                    "0":{
-                                        "items":1
-                                    },
-                                    "768":{
-                                        "items":2
-                                    },
-                                    "992":{
-                                        "items": 2
-                                    }
-                                }
-                            }'>
-                              
-                                <!--Testimonial One Single Start-->
-                                <div class="item " style="margin: 0px">
-                                    <div class="testimonial-one__single">
-                                  
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                                          
-                              
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
+                            </video>
                                     
-                                            <<a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                                         
-                                  
-                                    </div>
-                                </div>
-                              
-                            </div>
                         </div>
                     </div>
+                 
+
+                  
+                   </div>   
+                     <br>    
+                        <div class="col-md-12 text-center pad-buttom">
+                            <div class="about-one__btn-box">
+                                <a href="http://127.0.0.1:8000/contacto" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                            </div>  
+                        </div>  
+                
+
                 </div>
-            </div>
-        </section>
     </section>
 
       
