@@ -35,4 +35,9 @@ class InicioController extends Controller
 //        return redirect('/contacto')->with('status', ' ¡Enhorabuena! Tu mensaje ha sido enviado con éxito.');
     }
 
+    public function mensaje()
+    {
+        return view('web.mensaje');
+    }
+
 }

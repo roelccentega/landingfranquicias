@@ -101,6 +101,18 @@
     font-size: 10px;
         }
 }
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 60px;
+}
+.text-left{
+    text-align: left;
+}
+.text-top{
+    top: 55%
+}
+
 </style>
      <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -116,23 +128,42 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-        <a href="{{url('/contacto')}}">
-      <img src="assets/images/bannerkingtech.png" alt="franquicias">      
-        </a>
+ 
+            
+                    <img src="assets/images/bannerkingtech.png" alt="Franquicias">   
+                    
+
+         <div class="carousel-caption d-none d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
+      
+    </div>
+ 
+     <div class="item ">
+      
+            <img src="assets/images/web4.png" alt="Franquicias">
+      
+          <div class="carousel-caption d-none d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
       
     </div>
 
-    <div class="item">
-        <a href="{{url('/contacto')}}">
-      <img src="assets/images/web4.png" alt="franquicias">
-  </a>
-    </div>
 
-    <div class="item">
-        <a href="{{url('/contacto')}}">
-      <img src="assets/images/web5.png" alt="franquicias">
-  </a>
-    </div>
+    <div class="item ">
+    
+      <img src="assets/images/web5.png" alt="Franquicias">
+
+    <div class="carousel-caption d-none d-md-block text-top">
+                <div class="about-one__btn-box text-left " >
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
+    </div> 
   </div>
 
   <!-- Left and right controls -->
@@ -146,12 +177,18 @@
   </a>
 </div>
 <!-- ENDDDDDDDDDDDDDDDDDDDDDDD -->
+<!-- SLIDER MOBILE -->
+
 <div id="carouselExample" class="carousel slide display-image-mobile">
   <div class="carousel-inner">
     <div class="carousel-item active">
-        <a href="{{url('/contacto')}}">
+ 
       <img src="assets/images/mobile1.png" class="d-block w-100" alt="...">
-  </a>
+         <div class="nuevo d-none d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
     </div>
     <div class="carousel-item">
         <a href="{{url('/contacto')}}">

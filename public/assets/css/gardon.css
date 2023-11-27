@@ -6932,9 +6932,9 @@ ul {
 
 .pricing-one__single {
   position: relative;
-  display: block;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+  display: inline-block;
+  width: 60%;
+  box-shadow: 0px 10px 60px 0px   rgba(54, 186, 1, 0.8);
   border-radius: var(--gardon-bdr-radius);
   padding: 25px;
   margin-bottom: 30px;
@@ -6943,35 +6943,15 @@ ul {
   z-index: 1;
 }
 
-.pricing-one__single:hover {
-  background-color: var(--gardon-black);
-}
 
-.pricing-one__single:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 94px;
-  background-color: var(--gardon-primary);
-  border-top-left-radius: var(--gardon-bdr-radius);
-  border-top-right-radius: var(--gardon-bdr-radius);
-  clip-path: polygon(0 0, 100% 0%, 100% 9%, 0% 100%);
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
-  z-index: -1;
-}
 
-.pricing-one__single:hover:before {
-  background-color: var(--gardon-base);
-}
+
 
 .pricing-one__single-inner {
   position: relative;
   display: block;
-  border: 1px dashed var(--gardon-base);
-  border-radius: var(--gardon-bdr-radius);
+
+  border-radius: 30px;
   padding-left: 30px;
   padding-right: 40px;
   padding-top: 52px;
@@ -6981,9 +6961,6 @@ ul {
   z-index: 1;
 }
 
-.pricing-one__single:hover .pricing-one__single-inner {
-  border: 1px dashed var(--gardon-white);
-}
 
 .pricing-one__price-box {
   position: relative;

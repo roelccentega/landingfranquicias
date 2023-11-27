@@ -62,9 +62,9 @@
                                     <h3 class="footer-widget__title">Contáctanos</h3>
                                 </div>
                                 <ul class="footer-widget__link-list list-unstyled">
-                                    <li><a href="#"><img src="assets/images/ico-whatsapp.png" class="ico-footer"> +51 913 069 000</a></li> 
-                                    <li><a href="#"><img src="assets/images/message.png" class="ico-footer"> info@kingtech.pe</a></li>
-                                    <li><a href="#"><img src="assets/images/locator.png" class="ico-footer2"> Av. Gral. Antonio Alvarez de <br>  Arenales 2531. Lince</a></li>
+                                    <li><a href="#"><img src="{{asset('assets/images/ico-whatsapp.png')}}" class="ico-footer"> +51 913 069 000</a></li> 
+                                    <li><a href="#"><img src="{{asset('assets/images/message.png')}}" class="ico-footer"> info@kingtech.pe</a></li>
+                                    <li><a href="#"><img src="{{asset('assets/images/locator.png')}}" class="ico-footer2"> Av. Gral. Antonio Alvarez de <br>  Arenales 2531. Lince</a></li>
                                     
                                 </ul>
                             </div>
