@@ -15,6 +15,24 @@
         font-weight: 700;
         font-style: italic;
     }
+    @media(max-width: 768px)
+    {
+        .pricing-one__single {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    box-shadow: 0px 10px 60px 0px rgba(54, 186, 1, 0.8);
+    border-radius:40px;
+    padding: 25px;
+    margin-bottom: 30px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+.pad-bottom {
+    padding:100px 0;
+}
+    }
 </style>
         <!--Pricing One Start-->
       

@@ -6935,7 +6935,7 @@ ul {
   display: inline-block;
   width: 60%;
   box-shadow: 0px 10px 60px 0px   rgba(54, 186, 1, 0.8);
-  border-radius: var(--gardon-bdr-radius);
+  border-radius:40px;
   padding: 25px;
   margin-bottom: 30px;
   -webkit-transition: all 500ms ease;
@@ -6945,7 +6945,21 @@ ul {
 
 
 
-
+@media(max-width: 768px)
+    {
+        .pricing-one__single {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 10px 60px 0px rgba(54, 186, 1, 0.8);
+    border-radius: 40px;
+    padding: 25px;
+    margin-bottom: 30px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+    }
 
 .pricing-one__single-inner {
   position: relative;
