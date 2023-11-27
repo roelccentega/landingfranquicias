@@ -774,7 +774,7 @@ video{
     border-radius: 35px
 }
 </style>
-            <div class="container pad-video display-image-web" id="testimonios">
+            <div class="container pad-video " id="testimonios">
                     <div class="section-title text-center">
                     
                     <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
