@@ -47,7 +47,7 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/twenty-twenty/twentytwenty.css')}}" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="{{asset('assets/css/gardon.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/css/gardon.css?v=1')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/gardon-responsive.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/css/gardon-dark.css')}}" />
 
