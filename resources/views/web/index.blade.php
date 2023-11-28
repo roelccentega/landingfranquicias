@@ -88,19 +88,7 @@
     border: 1px solid #fff;
     border-radius: 0px;
 }
-@media(max-width: 768px)
-{
-    .carousel-control-next-icon {
-    border: 0px solid transparent;
-    padding: 15px;
-    font-size: 10px;
-        }
-        .carousel-control-prev-icon {
-    border: 0px solid transparent;
-    padding: 15px;
-    font-size: 10px;
-        }
-}
+
 .carousel-caption {
     right: 20%;
     left: 20%;
@@ -113,11 +101,46 @@
     top: 55%
 }
 
+
+@media(max-width: 768px)
+{
+    .carousel-control-next-icon {
+    border: 0px solid transparent;
+    padding: 15px;
+    font-size: 10px;
+        }
+        .carousel-control-prev-icon {
+    border: 0px solid transparent;
+    padding: 15px;
+    font-size: 10px;
+        }
+        .carousel-control .carousel-control-prev-icon, .carousel-control .carousel-control-next-icon, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -10px;
+}
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 40px;
+}
+.text-top{
+    top: inherit;
+}
+.text-left{
+    text-align:inherit;
+}
+}
 </style>
+
      <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-  <div id="myCarousel" class="carousel slide display-image-web" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide display-image-eb" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -130,10 +153,10 @@
     <div class="item active">
  
             
-                    <img src="assets/images/bannerkingtecha.png" alt="Franquicias">   
+                    <img src="assets/images/bannerkingtecha.png" id="myImageId" alt="Franquicias">   
                     
 
-         <div class="carousel-caption d-none d-md-block">
+         <div class="carousel-caption  d-md-block">
                 <div class="about-one__btn-box text-center">
                         <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
                 </div>  
@@ -143,27 +166,28 @@
  
      <div class="item ">
       
-            <img src="assets/images/web4a.png" alt="Franquicias">
+            <img src="assets/images/web4a.png" alt="Franquicias" id="myImageId2">
       
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption  d-md-block">
                 <div class="about-one__btn-box text-center">
                         <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
                 </div>  
          </div>
       
     </div>
+    
 
 
     <div class="item ">
     
-      <img src="assets/images/web5a.png" alt="Franquicias">
+      <img src="assets/images/web5a.png" alt="Franquicias" id="myImageId3">
 
-    <div class="carousel-caption d-none d-md-block text-top">
+    <div class="carousel-caption d-md-block text-top">
                 <div class="about-one__btn-box text-left " >
                         <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
                 </div>  
          </div>
-    </div> 
+    </div>  
   </div>
 
   <!-- Left and right controls -->
@@ -176,10 +200,21 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+ 
+      <script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || window.innerWidth <= 780) {
+            document.getElementById('myImageId').src = 'assets/images/mobile1a.png';
+             document.getElementById('myImageId2').src = 'assets/images/mobile2a.png';
+             document.getElementById('myImageId3').src = 'assets/images/mobile3a.png';
+        } else {
+            console.log("No estás usando un móvil");
+        }
+    </script>
 <!-- ENDDDDDDDDDDDDDDDDDDDDDDD -->
 <!-- SLIDER MOBILE -->
 
-<div id="carouselExample" class="carousel slide display-image-mobile">
+<!-- <div id="carouselExample" class="carousel slide display-image-mobile">
   <div class="carousel-inner">
     <div class="carousel-item active">
  
@@ -209,7 +244,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> -->
 
 
 <!-- end banner web -->

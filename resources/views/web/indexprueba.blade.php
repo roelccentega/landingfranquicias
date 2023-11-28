@@ -116,7 +116,7 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="assets/images/bannerkingtech.png" alt="Los Angeles">
+      <img src="assets/images/bannerkingtech.png"  id="imageSlider" alt="Los Angeles">
     </div>
 
     <div class="item">
@@ -139,7 +139,7 @@
   </a>
 </div>
 <!-- ENDDDDDDDDDDDDDDDDDDDDDDD -->
-<div id="carouselExample" class="carousel slide display-image-mobile">
+<!-- <div id="carouselExample" class="carousel slide display-image-mobile">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/images/mobile1.png" class="d-block w-100" alt="...">
@@ -159,10 +159,18 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> -->
 
 
 <!-- end banner web -->
+  <script>
+        let navegador = navigator.userAgent;
+        if (window.innerWidth <= 768) {
+           function cambiarImagenJS(){
+              document.getElementById("imageSlider").src="assets/images/mobile1.png";
+            }
+        }
+    </script>
 
 
 
