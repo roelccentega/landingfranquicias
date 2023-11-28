@@ -416,7 +416,7 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
     <script src="{{asset('assets/vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
     <script src="{{asset('assets/vendors/vegas/vegas.min.js')}}"></script>
     <script src="{{asset('assets/vendors/jquery-ui/jquery-ui.js')}}"></script>
-    <script src="{{asset('assets/vendors/timepicker/timePicker.js')}}"></script>
+
     <script src="{{asset('assets/vendors/circleType/jquery.circleType.js')}}"></script>
     <script src="{{asset('assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
     <script src="{{asset('assets/vendors/twenty-twenty/twentytwenty.js')}}"></script>
@@ -431,5 +431,4 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
 </body>
 
 
-<!-- Mirrored from bracketweb.com/gardon-html/main-html/index-dark.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Nov 2023 19:58:01 GMT -->
 </html>
