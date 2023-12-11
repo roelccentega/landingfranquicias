@@ -39,22 +39,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <link rel="stylesheet" href="{{asset('assets/vendors/animate/custom-animate.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/fontawesome/css/all.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/jarallax/jarallax.css')}}" />
-    <!-- <link rel="stylesheet" href="{{asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/nouislider/nouislider.pips.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/vendors/odometer/odometer.min.css')}}" /> -->
+    <link rel="stylesheet" href="{{asset('assets/vendors/odometer/odometer.min.css')}}" /> 
     <link rel="stylesheet" href="{{asset('assets/vendors/swiper/swiper.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/gardon-icons/style.c')}}ss">
     <link rel="stylesheet" href="{{asset('assets/vendors/tiny-slider/tiny-slider.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/reey-font/stylesheet.css')}}" />
-    <!-- <link rel="stylesheet" href="{{asset('assets/vendors/alagambe-font/stylesheet.css')}}" /> -->
+    <link rel="stylesheet" href="{{asset('assets/vendors/alagambe-font/stylesheet.css')}}" /> 
     <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.carousel.min.css')}}" />
     <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.theme.default.min.css')}}" />
-    <!-- <link rel="stylesheet" href="{{asset('assets/vendors/bxslider/jquery.bxslider.css')}}" /> -->
+     <link rel="stylesheet" href="{{asset('assets/vendors/bxslider/jquery.bxslider.css')}}" /> 
     <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap-select/css/bootstrap-select.min.css')}}" />
-    <!-- <link rel="stylesheet" href="{{asset('assets/vendors/vegas/vegas.min.css')}}" /> -->
+    <link rel="stylesheet" href="{{asset('assets/vendors/vegas/vegas.min.css')}}" /> 
     <link rel="stylesheet" href="{{asset('assets/vendors/jquery-ui/jquery-ui.css')}}" />
-    <!-- <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" /> -->
+    <link rel="stylesheet" href="{{asset('assets/vendors/timepicker/timePicker.css')}}" /> 
     <link rel="stylesheet" href="{{asset('assets/vendors/twenty-twenty/twentytwenty.css')}}" />
 
     <!-- template styles -->
@@ -427,11 +427,16 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
     <script src="{{asset('assets/vendors/bootstrap-select/js/bootstrap-select.min.js')}}"></script>
     <script src="{{asset('assets/vendors/vegas/vegas.min.js')}}"></script>
     <script src="{{asset('assets/vendors/jquery-ui/jquery-ui.js')}}"></script>
-
+    <script src="{{asset('assets/vendors/timepicker/timePicker.js')}}"></script>
     <script src="{{asset('assets/vendors/circleType/jquery.circleType.js')}}"></script>
     <script src="{{asset('assets/vendors/circleType/jquery.lettering.min.js')}}"></script>
     <script src="{{asset('assets/vendors/twenty-twenty/twentytwenty.js')}}"></script>
     <script src="{{asset('assets/vendors/twenty-twenty/jquery.event.move.js')}}"></script>
+
+
+
+
+
     <script src="{{asset('assets/js/form-whatsapp.js')}}"></script>
 
 

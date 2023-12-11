@@ -316,6 +316,8 @@
             padding-top: 80px;
         }
     </style>
+
+       
         <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}});">
             <!--Services One Start-->
             <div class="services-one__bg" >
