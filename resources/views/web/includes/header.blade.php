@@ -12,7 +12,7 @@
                     <div class="main-menu__wrapper-inner">
                         <div class="main-menu__left">
                             <div class="main-menu__logo">
-                                <a href="{{url('/')}}"><img src="https://kingtech.pe/assets/king-blanco.png" width="200px" alt=""></a>
+                                <a href="{{url('/')}}"><img src="https://kingtech.pe/assets/home/king-blanco.png" width="200px" alt=""></a>
                               
                             </div>
                             <div class="main-menu__main-menu-box">
