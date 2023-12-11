@@ -112,6 +112,7 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
     border-bottom: 1px solid #36BA01;
     background-color: #121212;
 }
+
     .team-one__single3
     {
         border: 2px solid #36BA01;
@@ -125,7 +126,7 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
     color: #fff;
     padding: 40px 35px 40px 80px;
     font-size: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     /* font-family: 'Raleway', sans-serif; */
     font-weight: 400;
 }

@@ -135,6 +135,13 @@
     text-align:inherit;
 }
 }
+body {
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #121212;
+}
 </style>
 
      <div class="stricky-header stricked-menu main-menu">
@@ -256,7 +263,7 @@
 
 
 <!--LOGO Start-->
-        <section class="team-one display-carousel-web" id="productos" style="background-image: url({{asset('assets/images/banner-world.png')}});">
+        <section class="team-one display-carousel-web" id="productos" style="background-image: url({{asset('assets/images/banner-world.png')}}); ">
             <div class="container">
                 <div class="section-title text-center" >
                     
@@ -318,7 +325,11 @@
     </style>
 
        
-        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}});">
+        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}}); background-position: bottom;
+    background-repeat: no-repeat;
+    /* display: block; */
+    width: 100%;
+    height: 100%;">
             <!--Services One Start-->
             <div class="services-one__bg" >
             </div>
@@ -530,6 +541,9 @@
     {
       .banner-section{
         background-image: url({{asset('assets/images/seccion2y3.png')}});  
+        background-position: bottom;
+         background-repeat: no-repeat;
+          
         
       }   
     }
