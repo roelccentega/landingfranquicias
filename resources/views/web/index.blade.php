@@ -883,7 +883,7 @@ video{
                     <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="team--">
 
-                            <video height="auto" width="35%" controls autoplay poster="{{asset('images/influencerimages.png')}}">
+                            <video height="auto" width="35%" controls  poster="{{asset('images/influencerimages.png')}}">
                                 <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
                             </video>
@@ -918,7 +918,7 @@ video{
                     <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="team--">
 
-                            <video height="auto" width="80%" controls autoplay poster="{{asset('images/influencerimages.png')}}">
+                            <video height="auto" width="80%" controls  poster="{{asset('images/influencerimages.png')}}">
                                 <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
                             </video>
