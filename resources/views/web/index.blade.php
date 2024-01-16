@@ -269,9 +269,13 @@ body {
     padding: 100px 0 130px;
     z-index: 1;
 }
-.img1 img{
+@media(max-width:768px)
+{
+    .img1 img{
     width:100%;
 }
+}
+
 </style>
 
 
