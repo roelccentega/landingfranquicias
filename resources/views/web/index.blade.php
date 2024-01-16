@@ -152,7 +152,7 @@ body {
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
+
   </ol>
 
   <!-- Wrapper for slides -->
@@ -160,7 +160,7 @@ body {
     <div class="item active">
  
             
-                    <img src="assets/images/bannerkingtecha.png" id="myImageId" alt="Franquicias">   
+                    <img src="assets/images/portada1.png" id="myImageId" alt="Franquicias">   
                     
 
          <div class="carousel-caption  d-md-block">
@@ -173,7 +173,7 @@ body {
  
      <div class="item ">
       
-            <img src="assets/images/web4a.png" alt="Franquicias" id="myImageId2">
+            <img src="assets/images/portada2.png" alt="Franquicias" id="myImageId2">
       
           <div class="carousel-caption  d-md-block">
                 <div class="about-one__btn-box text-center">
@@ -185,16 +185,7 @@ body {
     
 
 
-    <div class="item ">
-    
-      <img src="assets/images/web5a.png" alt="Franquicias" id="myImageId3">
-
-    <div class="carousel-caption d-md-block text-top">
-                <div class="about-one__btn-box text-left " >
-                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
-                </div>  
-         </div>
-    </div>  
+     
   </div>
 
   <!-- Left and right controls -->
@@ -211,9 +202,9 @@ body {
       <script>
         let navegador = navigator.userAgent;
         if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || window.innerWidth <= 780) {
-            document.getElementById('myImageId').src = 'assets/images/mobile1a.png';
-             document.getElementById('myImageId2').src = 'assets/images/mobile2a.png';
-             document.getElementById('myImageId3').src = 'assets/images/mobile3a.png';
+            document.getElementById('myImageId').src = 'assets/images/portadam1.png';
+             document.getElementById('myImageId2').src = 'assets/images/portadam2.png';
+   
         } else {
             console.log("No estás usando un móvil");
         }
@@ -263,23 +254,45 @@ body {
 
 
 <!--LOGO Start-->
-        <section class="team-one display-carousel-web" id="productos" style="background-image: url({{asset('assets/images/banner-world.png')}}); ">
+<style>
+    .imagebg1{
+        background-image: url({{asset('assets/images/banner-world.png')}});
+    } 
+@media(max-width:768px){
+    .imagebg1{
+        background-image: url({{asset('assets/images/back-primera-seccion.png')}});
+    } 
+}
+.team-one {
+    position: relative;
+    display: block;
+    padding: 100px 0 130px;
+    z-index: 1;
+}
+.img1 img{
+    width:100%;
+}
+</style>
+
+
+        <section class="team-one display-carousel-we imagebg1" id="producto">
             <div class="container">
                 <div class="section-title text-center" >
                     
-                    <h2 class="titleh2">CONVIÉRTETE EN UN PARTNER GANADOR <br>  
-                   <span class="font-span-title">CON CERO SOLES   </span><br><span class="font-span-title2">DE LAS MARCAS CON MEJORES BENEFICIOS</span> 
+                    <h2 class="titleh2">Sé un socio ganador con nuestras<br> <span class="font-span-title"> Franquicias  </span><br><span class="font-span-title2">
+                   y descubre los mejores beneficios
+                   </span> 
                         </h2>
                         <br>
 
                      
                 </div>
-                <div class="row">
+                <div class="row justify-content-center" >
                     
                      <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6  wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-xl-6 col-lg-6 col-offset-lg-6 col-offset-xl-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="team-one__single3 ">
-                            <div class="text-center">
+                            <div class="text-center img1">
                                     <img src="{{asset('/assets/images/logotinbet.png')}}">  
                             </div>
                            
@@ -296,22 +309,7 @@ body {
                     </div>
                     <!--Team One Single End-->
                      <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6  wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-one__single3">
-                            <div class="team-one__img-box">
-                               <div class="text-center">    
-                                     <img src="{{asset('/assets/images/logobetgana.png')}}">
-                               </div>
-                           <ul class="ul-logos">    
-                                <li>    Verificación de datos, historiales Y estadísticas detalladas </li>
-                                <li>Presenta un interfaz atractivo que logrará el potencial rendimiento.    </li>
-                           </ul>
-                            </div>
-                              <div class="about-one__btn-box text-center">
-                                <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
-                            </div>  
-                        </div>
-                    </div>
+                
                     <!--Team One Single End-->
                  
                 </div>
@@ -325,11 +323,11 @@ body {
     </style>
 
        
-        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}}); background-position: bottom;
-    background-repeat: no-repeat;
-    /* display: block; */
-    width: 100%;
-    height: 100%;">
+        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}});      background-position: bottom;
+        background-repeat: no-repeat;
+        /* display: block; */
+        width: 100%;
+        height: 100%;">
             <!--Services One Start-->
             <div class="services-one__bg" >
             </div>

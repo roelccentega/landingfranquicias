@@ -88,6 +88,20 @@
     border: 1px solid #fff;
     border-radius: 0px;
 }
+
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 60px;
+}
+.text-left{
+    text-align: left;
+}
+.text-top{
+    top: 55%
+}
+
+
 @media(max-width: 768px)
 {
     .carousel-control-next-icon {
@@ -100,12 +114,40 @@
     padding: 15px;
     font-size: 10px;
         }
+        .carousel-control .carousel-control-prev-icon, .carousel-control .carousel-control-next-icon, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: -10px;
+}
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    padding-bottom: 40px;
+}
+.text-top{
+    top: inherit;
+}
+.text-left{
+    text-align:inherit;
+}
+}
+body {
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #121212;
 }
 </style>
+
      <div class="stricky-header stricked-menu main-menu">
             <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
         </div><!-- /.stricky-header -->
-  <div id="myCarousel" class="carousel slide display-image-web" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide display-image-eb" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -116,16 +158,43 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <img src="assets/images/bannerkingtech.png"  id="imageSlider" alt="Los Angeles">
-    </div>
+ 
+            
+                    <img src="assets/images/bannerkingtecha.png" id="myImageId" alt="Franquicias">   
+                    
 
-    <div class="item">
-      <img src="assets/images/web4.png" alt="Chicago">
+         <div class="carousel-caption  d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
+      
     </div>
+ 
+     <div class="item ">
+      
+            <img src="assets/images/web4a.png" alt="Franquicias" id="myImageId2">
+      
+          <div class="carousel-caption  d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
+      
+    </div>
+    
 
-    <div class="item">
-      <img src="assets/images/web5.png" alt="New York">
-    </div>
+
+    <div class="item ">
+    
+      <img src="assets/images/web5a.png" alt="Franquicias" id="myImageId3">
+
+    <div class="carousel-caption d-md-block text-top">
+                <div class="about-one__btn-box text-left " >
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
+    </div>  
   </div>
 
   <!-- Left and right controls -->
@@ -138,17 +207,40 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+ 
+      <script>
+        let navegador = navigator.userAgent;
+        if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i) || window.innerWidth <= 780) {
+            document.getElementById('myImageId').src = 'assets/images/mobile1a.png';
+             document.getElementById('myImageId2').src = 'assets/images/mobile2a.png';
+             document.getElementById('myImageId3').src = 'assets/images/mobile3a.png';
+        } else {
+            console.log("No estás usando un móvil");
+        }
+    </script>
 <!-- ENDDDDDDDDDDDDDDDDDDDDDDD -->
+<!-- SLIDER MOBILE -->
+
 <!-- <div id="carouselExample" class="carousel slide display-image-mobile">
   <div class="carousel-inner">
     <div class="carousel-item active">
+ 
       <img src="assets/images/mobile1.png" class="d-block w-100" alt="...">
+         <div class="nuevo d-none d-md-block">
+                <div class="about-one__btn-box text-center">
+                        <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                </div>  
+         </div>
     </div>
     <div class="carousel-item">
+        <a href="{{url('/contacto')}}">
       <img src="assets/images/mobile2.png" class="d-block w-100" alt="...">
+  </a>
     </div>
     <div class="carousel-item">
+        <a href="{{url('/contacto')}}">
       <img src="assets/images/mobile3.png" class="d-block w-100" alt="...">
+  </a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -163,14 +255,6 @@
 
 
 <!-- end banner web -->
-  <script>
-        let navegador = navigator.userAgent;
-        if (window.innerWidth <= 768) {
-           function cambiarImagenJS(){
-              document.getElementById("imageSlider").src="assets/images/mobile1.png";
-            }
-        }
-    </script>
 
 
 
@@ -179,21 +263,26 @@
 
 
 <!--LOGO Start-->
-        <section class="team-one display-carousel-web" id="productos" style="background-image: url({{asset('assets/images/banner-world.png')}});">
+
+
+
+
+        <section class="team-one display-carousel-web" id="productos" style="background-image: url({{asset('assets/images/banner-world.png')}}); ">
             <div class="container">
                 <div class="section-title text-center" >
                     
-                    <h2 class="titleh2">CONVIÉRTETE EN UN PARTNER GANADOR <br>  
-                   <span class="font-span-title">CON CERO SOLES   </span><br><span class="font-span-title2">DE LAS MARCAS CON MEJORES BENEFICIOS</span> 
+                    <h2 class="titleh2">Sé un socio ganador con nuestras<br> <span class="font-span-title"> Franquicias  </span><br><span class="font-span-title2">
+                   y descubre los mejores beneficios
+                   </span> 
                         </h2>
                         <br>
 
                      
                 </div>
-                <div class="row">
+                <div class="row justify-content-center" >
                     
                      <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6  wow fadeInUp" data-wow-delay="300ms">
+                    <div class="col-xl-6 col-lg-6 col-offset-lg-6 col-offset-xl-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="team-one__single3 ">
                             <div class="text-center">
                                     <img src="{{asset('/assets/images/logotinbet.png')}}">  
@@ -212,29 +301,25 @@
                     </div>
                     <!--Team One Single End-->
                      <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6  wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-one__single3">
-                            <div class="team-one__img-box">
-                               <div class="text-center">    
-                                     <img src="{{asset('/assets/images/logobetgana.png')}}">
-                               </div>
-                           <ul class="ul-logos">    
-                                <li>    Verificación de datos, historiales Y estadísticas detalladas </li>
-                                <li>Presenta un interfaz atractivo que logrará el potencial rendimiento.    </li>
-                           </ul>
-                            </div>
-                              <div class="about-one__btn-box text-center">
-                                <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
-                            </div>  
-                        </div>
-                    </div>
+                
                     <!--Team One Single End-->
                  
                 </div>
             </div>
         </section>
     <!--LOGO End-->
-        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/banner-world.png')}});">
+    <style type="text/css">
+        span.font-span-title2{
+            padding-top: 80px;
+        }
+    </style>
+
+       
+        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}}); background-position: bottom;
+    background-repeat: no-repeat;
+    /* display: block; */
+    width: 100%;
+    height: 100%;">
             <!--Services One Start-->
             <div class="services-one__bg" >
             </div>
@@ -348,17 +433,18 @@
 
          }
     .pad-container{
-            padding: 0 20px;   
+              padding: 0 15px 0px 30px;
             }
     .title3-h2 {
     color: #fff;
     font-style: italic;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 100
+
         }
         .font-span-title5 {
     font-weight: 800;
-    font-size: 26px;
+    font-size: 23px;
         }
         .team-bootom {
     border: 2px solid #36BA01;
@@ -381,8 +467,7 @@
         .text-none{
             display: none
         }
-        .pad-container {
-    padding: 0 5px 0 20px;}
+     
     .team-one__single2 {
     border: 2px solid #36BA01;
     margin-bottom: 50px;
@@ -405,7 +490,7 @@
         .pad-buttom {
     padding-top: 30px;
     padding-right: 0px;
-    padding-left: 30px;
+
         }
         .pad3{
             padding-top: 20px
@@ -424,9 +509,10 @@
             padding-left: 0px;
         }
         .section-title__title {
-    font-size: 30px;
+        font-size: 29px;
+    text-align: center;
     line-height: 40px;
-    padding: 0 20px;
+    padding: 0 30px;
         }
         .about-one {
     position: relative;
@@ -437,12 +523,28 @@
 
        
     }
+
+    .banner-section{
+        background-image: url({{asset('assets/images/banner-section.png')}});
+    }
+    @media(max-width: 768px)
+    {
+      .banner-section{
+        background-image: url({{asset('assets/images/seccion2y3.png')}});  
+        background-position: bottom;
+         background-repeat: no-repeat;
+          
+        
+      }   
+    }
+   
+    
 </style>
         <!--About One Start-->
-        <section class="about-one pad" id="requerimientos" style="background-image: url({{asset('assets/images/banner-section.png')}});">
+        <section class="about-one pad banner-section" id="requerimientos">
             <div class="">
                 <!-- Presentacion 1500 socios -->
-                <div class="row">
+                <div class="row ">
                     <div class="col-xl-6 display-carousel-web" >
                         <div class="about-one__left">
                             <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
@@ -526,11 +628,11 @@
                 <!-- En presentación 1500 socios -->
 
                 <!-- galeria de franquicias -->
-                <div class="row pad-new-banner" id="#trabajo">
+                <div class="row pad-new-banner " id="#trabajo">
                     <div class="section-title text-center">
                     
                     <h2 class="title3-h2 display-carousel-web">CON KINGTECH PARTNER, <span class="font-span-title2">TU TIENDA <br>SE VERÁ DE ESTA MANERA   </span>  </h2>
-                     <h2 class="title3-h2 display-carousel-mobile">CON KINGTECH PARTNER, <br>   <span class="font-span-title5">TU TIENDA <br>SE VERÁ DE ESTA MANERA   </span>  </h2>
+                     <h2 class="title3-h2 display-carousel-mobile">CON KINGTECH PARTNER, <br>   <span class="font-span-title5"><b>TU TIENDA <br>SE VERÁ DE ESTA MANERA  </b>   </span>  </h2>
                     <br>  
                      <br>    
                     <div class="row pad-container">
@@ -634,7 +736,7 @@
                 <!-- end galeria de kingtech partner -->
 
                 <!-- Como trabajamos -->
-                <div class="row pad3 new-style" id="trabajo">
+                <div class="row pad3 new-style" id="trabajo" >
 
 
                      <div class="section-title text-center">
@@ -644,9 +746,20 @@
                         <br>
                         <P class="text-work text-none">En Kingtech Perú estamos comprometidos con nuestros socios, por lo que no estarás solo, te apoyamos en la planificación, <br> construcción y crecimiento de tu negocio.</P>
                 </div>
+                <style type="">
+                    .como-back{
+                        background-image: url({{asset('assets/images/.png')}})
+                    }
+                    @media(max-width: 768px)
+                    {
+                          .como-back{
+                        background-image: url({{asset('assets/images/back.png')}})
+                    }
+                    }
+                </style>
                 <div class="">
                     
-                  <div class="row pad-container">
+                  <div class="row pad-container como-back" style="    ;">
                                       <!--Team One Single Start-->
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                         <div class="team-one__single2">
@@ -691,18 +804,18 @@
                 </div> 
                   </div>
              
-                <div class="row">
+             
                     <br>    
                         <div class="col-md-12 text-center pad-buttom">
                             <div class="about-one__btn-box">
                                 <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
                             </div>  
                         </div>  
-                </div>  
+                
                 </div> 
             
                 <!-- End como trabajamos -->
-                <section>
+                
 
 <!-- video caroisel -->
 
@@ -728,111 +841,93 @@
     display:block;
      width: none; 
 }
+.owl-carousel .owl-item img {
+    display: block;
+    width: none;
+    width: 100%;
+}
+
+video{
+    border:3px solid green;
+    border-radius: 35px
+}
+@media(max-width: 768px)
+{
+    .pad-video {
+    padding: 150px 0 1px;
+        }
+}
 </style>
-                <!-- Testimonios -->
-                <div class="container pad-video display-image-web" id="testimonios">
+            <div class="container pad-video display-image-web" id="testimonios">
                     <div class="section-title text-center">
                     
                     <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
                         </h2>
                         <br>
-                        <P class="text-work">Conoce la experiencias de nuestros clientes</P>
+                        <p class="text-work">Conoce la experiencias de nuestros clientes</p>
                     </div>
                   <div class="row align-self-center">
                    
                     
-                     <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6 text-right wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-">
+                   
+                    <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="team--">
 
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                        
-                        </div>
-                    </div>
-                    <!--Team One Single End-->
-                     <!--Team One Single Start-->
-                    <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="team-">
-                            <div class="team--">
-                                 <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
+                            <video height="auto" width="35%" controls  poster="{{asset('images/influencerimages.png')}}">
+                                <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
+                            </video>
+                                    
                         </div>
                     </div>
-                    <!--Team One Single End-->
                  
-                   </div>   
-                </div>
 
-            </div>
-             <section class="testimonial-one display-image-mobile">
-            <div class="container">
-                <div class="row">
-                   <div class="section-title text-center">
+                  
+                   </div>   
+                     <br>    
+                        <div class="col-md-12 text-center pad-buttom">
+                            <div class="about-one__btn-box">
+                                <a href="http://127.0.0.1:8000/contacto" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                            </div>  
+                        </div>  
+                
+
+                </div>
+                 <div class="container pad-video display-image-mobile" id="testimonios">
+                    <div class="section-title text-center">
                     
                     <h2 class="section-title__title">TESTIMONIOS DE NUESTROS PARTNER
                         </h2>
                         <br>
-                        <P class="text-work">Conoce la experiencias de nuestros clientes</P>
+                        <p class="text-work">Conoce la experiencias de nuestros clientes</p>
                     </div>
-                    <div class="col-xl-12">
-                        <div class="testimonial-one__right">
-                            <div class="testimonial-one__carousel thm-owl__carousel owl-theme owl-carousel"
-                                data-owl-options='{
-                                "items": 2,
-                                "margin": 17,
-                                "smartSpeed": 700,
-                                "loop":true,
-                                "autoplay": false,
-                                "nav":false,
-                                "dots":true,
-                                "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                                "responsive":{
-                                    "0":{
-                                        "items":1
-                                    },
-                                    "768":{
-                                        "items":2
-                                    },
-                                    "992":{
-                                        "items": 2
-                                    }
-                                }
-                            }'>
+                  <div class="row align-self-center">
+                   
+                    
+                   
+                    <div class="col-xl-12 col-lg-12 text-center wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="team--">
+
+                            <video height="auto" width="80%" controls  poster="{{asset('images/influencerimages.png')}}">
+                                <source src="https://tinbet.la/lobaton-promo.mp4" type="video/mp4">
                               
-                                <!--Testimonial One Single Start-->
-                                <div class="item " style="margin: 0px">
-                                    <div class="testimonial-one__single">
-                                  
-                                <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                                          
-                              
-                                    </div>
-                                </div>
-                                <!--Testimonial One Single End-->
-                                <!--Testimonial One Single Start-->
-                                <div class="item">
-                                    <div class="testimonial-one__single">
+                            </video>
                                     
-                                            <<a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" class="video-popup">
-                                        <img src="{{asset('assets/images/video-images.png')}}">
-                                </a>
-                                         
-                                  
-                                    </div>
-                                </div>
-                              
-                            </div>
                         </div>
                     </div>
+                 
+
+                  
+                   </div>   
+                     <br>    
+                        <div class="col-md-12 text-center pad-buttom">
+                            <div class="about-one__btn-box">
+                                <a href="http://127.0.0.1:8000/contacto" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
+                            </div>  
+                        </div>  
+                
+
                 </div>
-            </div>
-        </section>
     </section>
 
       
