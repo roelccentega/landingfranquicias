@@ -279,7 +279,7 @@ body {
             <div class="container">
                 <div class="section-title text-center" >
                     
-                    <h2 class="titleh2">Sé un socio ganador con nuestras<br> <span class="font-span-title"> Franquicias  </span><br><span class="font-span-title2">
+                    <h2 class="titleh2">Sé un socio ganador con nuestras<br> <span class="font-span-title"> FRANQUICIAS  </span><br><span class="font-span-title2">
                    y descubre los mejores beneficios
                    </span> 
                         </h2>
@@ -323,97 +323,7 @@ body {
     </style>
 
        
-        <section class="services-one display-carousel-mobile"   style="background-image: url({{asset('assets/images/back-primera-seccion.png')}});      background-position: bottom;
-        background-repeat: no-repeat;
-        /* display: block; */
-        width: 100%;
-        height: 100%;">
-            <!--Services One Start-->
-            <div class="services-one__bg" >
-            </div>
-            <div class="container">
-                <div class="section-title text-center">
-                           
-                    <h2 class="titleh2">CONVIÉRTETE EN UN PARTNER GANADOR <br>  
-                   <span class="font-span-title">CON CERO SOLES   </span><br><span class="font-span-title2">DE LAS MARCAS CON MEJORES BENEFICIOS</span> 
-                        </h2>
-                        <br>
-                <div class="services-one__bottom">
-                    <div class="services-one__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
-                        "loop": true,
-                        "autoplay": true,
-                        "margin": 30,
-                        "nav": true,
-                        "dots": false,
-                        "smartSpeed": 500,
-                      
-                        "autoplayTimeout": 2000, 
-                        "navText": ["<span class=\"fas fa-angle-left\"></span>","<span class=\"fas fa-angle-right\"></span>"],
-                        "responsive": {
-                            "0": {
-                                "items": 1
-                            },
-                            "768": {
-                                "items": 2
-                            },
-                            "992": {
-                                "items": 3
-                            },
-                            "1200": {
-                                "items": 3
-                            }
-                        }
-                    }'>
-                        <!--Services One Single Start-->
-                        <div class="item ">
-                            <div class="services-one__single team-one__single3 ">
-                                <div class="services-one__img-box">
-                                    <div class="services-one__img">
-                                        <img src="{{asset('/assets/images/logotinbet.png')}}" alt="">
-                                    </div>
-                                </div>
-                                
-                                <ul class="ul-logos">   
-                            <li>    La Interfaz más atractiva y moderna </li>
-                            <li>    Fácil de usar </li>
-                            <li>    Gran variedad de deportes totalmente en Vivo</li>
-                          </ul>
-                          <div class="about-one__btn-box text-center">
-                                <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
-                            </div>  
-                        </div>
-                         
-                        </div>
-                        <!--Services One Single End-->
-                        <!--Services One Single Start-->
-                        <div class="item">
-                            <div class="services-one__single team-one__single3">
-                                <div class="services-one__img-box">
-                                    <div class="services-one__img">
-                                        <img src="{{asset('/assets/images/logobetgana.png')}}" alt="">
-                                    </div>
-                                </div>
-                                
-                              <ul class="ul-logos"> 
-                                <li>    Verificación de datos, historiales Y estadísticas detalladas </li>
-                                <li>Presenta un interfaz atractivo que logrará el potencial rendimiento.    </li>
-                               </ul>
-                               
-                                  <div class="about-one__btn-box text-center">
-                                    <a href="{{url('/contacto')}}" class="about-one__btn thm-btn">QUIERO SER SOCIO</a>
-                                </div>  
-                          </div>
-                        </div>
-                        <!--Services One Single End-->
-                     
-                   
-                     
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Services One End-->
-
+   
 <style type="">
     
     .display-images{

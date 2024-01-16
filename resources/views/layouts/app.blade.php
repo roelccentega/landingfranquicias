@@ -262,7 +262,7 @@ src="https://www.facebook.com/tr?id=1373844363535210&ev=PageView&noscript=1"
         font-weight: 700
     }
     h2> span.font-span-title {
-    font-size: 34px;
+    font-size: 44px;
     font-weight: 900;
     }
     .font-span-title2 {
