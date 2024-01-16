@@ -51,7 +51,7 @@
                         <div class="col-xl-4 col-lg-4 col-md- wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__logo">
-                                    <a href="https://kingtech.pe"><img src="https://kingtech.pe/assets/king-blanco.png" class="logo-footer" alt=""></a>
+                                    <a href="https://kingtech.pe"><img src="https://kingtech.pe/assets/home/king-blanco.png" class="logo-footer" alt=""></a>
                                 </div>
                            
                             </div>
